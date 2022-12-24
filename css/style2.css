@@ -1,0 +1,150 @@
+:root{
+    --custom-color:black;
+    --padding:20px;
+    --margin-bottom:10px;
+    --margin-top:10px;
+    --medium-font-size:1.2em;
+    --big-font-size:2.5em;
+    --border-radius:10px;
+    --input-padding:15px 25px;
+    --border:1px solid pink;
+
+}
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+.header{
+    display:flex;
+    padding:10px 10px;
+    align-items: right;
+    height:50px;
+    background:black;
+
+}
+
+a{
+    display:inline;
+    padding:10px;
+    color:pink;
+    font-weight:bold;
+    font-size:20px;
+    text-decoration: none;
+    
+
+}
+
+.container{
+    width:1000px;
+    max-width:100%;
+    min-height:400px;
+    margin:0 auto;
+    
+    
+}
+
+.form{
+    width:80%;
+    margin: 0,auto;
+    padding:var(--padding);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    
+    
+}
+
+.form-heading{
+    text-align:center;
+    margin-top: var(--margin-top);
+}
+
+.form_group{
+    width:100%;
+    display:flex;
+    margin-bottom: var(--margin-bottom);
+    margin-top: var(--margin-top);
+    flex-direction: column;
+
+}
+
+.form_group-label{
+    color: var(--custom-color);
+    font-size: var(--medium-font-size);
+    margin-bottom: var(--margin-bottom);
+}
+
+input{
+    padding:var(--padding);
+    border-radius: var(--border-radius);
+    border:var(--border)
+}
+
+input::placeholder{
+    font-size: medium;
+}
+
+select{
+    padding:var(--input-padding);
+    border-radius: var(--border-radius);
+    border:var(--border);
+    color: var(--custom-color);
+}
+
+.btn-submit{
+    margin-top:var(--margin-top);
+    border:none;
+    padding:14px;
+    border-radius: var(--border-radius);
+    cursor:pointer;
+    background-color: pink;
+    font-size: var(--medium-font-size);
+    color:black;
+    transition:0.5s;
+    width:100%;
+}
+
+.btn-submit:hover{
+    background:hotpink;
+}
+
+
+
+/* table styles */
+
+.table-heading{
+    margin-top: 40px;
+    text-align: center;
+    color:pink;
+
+
+}
+ .table-cont{
+     width:60%;
+     margin: 0 auto;
+     overflow-x: auto;
+     white-space: nowrap;
+ }
+ .table-cont::-webkit-scrollbar{
+     display:none;
+ }
+
+ table{
+     width:100%;
+     margin-top: 50px;
+ }
+
+ td, th{
+     border:var(--border);
+     text-align: left ;
+     padding:var(--padding);
+ }
+
+ thead{
+     background-color: pink;
+     border:none;
+ }
